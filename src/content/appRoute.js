@@ -16,7 +16,7 @@
 // export default Amrit;
 
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import { Sidenav } from '../sidenav/sidenav';
 import { Homes } from './homes';
@@ -29,7 +29,10 @@ const  AppRoute =()=>{
             <div>
                 <Router>
                     <Route exact path="/" render={()=><Sidenav></Sidenav>}></Route>
-                    <Route path="/homes" render={()=><Homes></Homes>}></Route>
+                 <Switch>
+                 <Route path="/homes" render={()=><Homes></Homes>}></Route>
+                 </Switch>
+                   
                 </Router>
             </div>
         );

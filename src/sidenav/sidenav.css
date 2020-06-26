@@ -1,7 +1,7 @@
 /* body {
     font-family: "Lato", sans-serif;
   } */
-  .nav_list{
+  /* .nav_list{
     list-style-type: none;
 
 }
@@ -14,35 +14,79 @@
   
 .sidenav {
   margin-right: 0px;
-  /* margin-top: 40px; */
 height: 570px;
-width: 240px;
+width: 250px;
 position: fixed;
 z-index: 1;
 top: 0;
 left: 0;
-background-color: wheat;
+background-color: black;
 list-style-type: none;
 
 padding-top: 90px;
 }
   
-  .sidenav_item{
+  .sidenav_item {
     
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    
+
+  }
+   
+  .sidenav a:hover {
+    color: #f1f1f1;
+  } 
+  
+  .main {
+    margin-top: 40px;
+    margin-left: 161px; 
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 14px;}
+    .sidenav a {font-size: 18px;}
+  } */
+  /* body {
+    font-family: "Lato", sans-serif;
+  }
+   */
+  .sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:aliceblue;
+    overflow-x: hidden;
+    padding-top: 150px;
+  }
+  
+  .sidenav a {
+    /* position:fixed; */
+    /* padding: 6px 8px 6px 16px; */
+    padding: 10px 20px;
     text-decoration: none;
     font-size: 25px;
     color: black;
     display: block;
-
+    letter-spacing: 2px;
+    font-family: "Rubik";
   }
   
   .sidenav a:hover {
-    color: #f1f1f1;
+    color:royalblue;
+    margin-left: 20px;
+    transition: 0.4px;
   }
   
   .main {
-    margin-top: 40px;
-    margin-left: 161px; /* Same as the width of the sidenav */
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
   }
   
   @media screen and (max-height: 450px) {
