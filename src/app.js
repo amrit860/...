@@ -1,13 +1,12 @@
 import React from "react";
-import { Sidenav } from './sidenav/sidenav';
+import AppRoute from './content/appRoute';
 
 
 function App() {
     return (
 
         <div className="App">
-            <Sidenav></Sidenav>
-
+<AppRoute></AppRoute>
 
         </div>
 

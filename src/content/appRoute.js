@@ -6,10 +6,10 @@
 // const Amrit=()=>{
 //     return(
 //         <div>
-        
-         
+
+
 //             <Route path='/home' component={Home}></Route>
-            
+
 //         </div>
 //     )
 // }
@@ -17,25 +17,36 @@
 
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Homes from './Homes';
 
-export class Amrit extends Component {
-    render() {
+import { Sidenav } from '../sidenav/sidenav';
+import { Homes } from './homes';
+import { render } from '@testing-library/react';
+
+const  AppRoute =()=>{
+
+    
         return (
             <div>
                 <Router>
-                   <Route path='/homes' component={Homes}></Route>
+                    <Route exact path="/" render={()=><Sidenav></Sidenav>}></Route>
+                    <Route path="/homes" render={()=><Homes></Homes>}></Route>
                 </Router>
             </div>
         );
     }
-}
 
-
-
-
-
-    
    
+export default AppRoute;
+
+
+
+
+
+
+
+
+
+
+
 
 

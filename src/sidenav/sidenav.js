@@ -1,17 +1,22 @@
-import React from 'react';
-import { Link, BrowserRouter as Router, Route } from 'react-router-dom';
+import React, { Component } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './sidenav.css';
-import Homes from '../content/Homes';
-export const Sidenav = () => {
-    return (
+export class Sidenav extends Component {
+  
+    
+    render() {
+        return (
 
-        <Router>
-            <div>
-         < Link to='/homes' >Homes</Link> 
-     
-           </div>
-        </Router>
-    )
+            <Router>
+                <div>
+                        <Link to='/homes'>Homes</Link>
+                    
+                </div>
+            </Router>
+        )
+    }
+
 }
 
 
